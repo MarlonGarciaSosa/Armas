@@ -17,8 +17,8 @@ html {
 
 
 /**header**/
-.header, .header *{
-    background-color: rgb(70, 70, 70);   
+header, header *{
+    background-color: #333;   
 }
 .header{
     width: 100%;
@@ -33,11 +33,13 @@ html {
     padding: 5px;
 }
 .header__section #caballero{
+    background-color: #333;
     display: inline;
     width: 3rem;
     height: 4rem;
 }
 .header__section #sol{
+    background-color: #333;
     display: inline;
     width: 2rem;
     height: 2rem;
@@ -45,22 +47,151 @@ html {
 
 
 /**Segunda nav**/
-.header__nav{
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    padding-bottom: 10px;
-}
-.header__nav__link{
-    position: relative;
-    display: inline;
-    min-width: 120px;
-    background-color: rgb(83, 83, 83);
-    color: rgb(78, 78, 248);    
-    border: 3px solid #444;
-}
 .header__nav__link:hover {
-    background-color: rgb(110, 110, 110);
+    background-color: rgb(100,100,100);
+}
+.header__nav::-webkit-scrollbar {
+    width: 95%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(63, 176, 213);
+}
+.header__nav::-webkit-scrollbar-thumb {
+    background-color:  rgb(78, 78, 248);
+    border-radius: 5px;
+}
+/**Celular**/
+@media (max-width: 767px) {
+    .header__nav{
+        display: flex;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+    }
+    .header__nav__link{
+        position: relative;
+        display: inline;
+        min-width: 120px;
+        background-color: rgb(74, 74, 74);
+        color: rgb(78, 78, 248);    
+        border: 3px solid #444;
+        min-width: 20%;
+        margin: 0 2%;
+    }
+    .header{
+        margin-top: -120.8px;
+    }
+    html {
+        background-color: #333;
+        padding-top: 120.8px;
+    }
+
+}
+/**Tablet**/
+@media (min-width: 768px) and (max-width: 990px) {
+    .header__nav{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+    .header__nav__link{
+        position: relative;
+        display: inline;
+        min-width: 120px;
+        background-color: rgb(74, 74, 74);
+        color: rgb(78, 78, 248);    
+        border: 3px solid #444;
+        min-width: 15%;
+    }
+}
+/**PC**/
+@media (min-width: 991px) {
+    .header__nav{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+    .header__nav__link{
+        position: relative;
+        display: inline;
+        min-width: 120px;
+        background-color: rgb(74, 74, 74);
+        color: rgb(78, 78, 248);    
+        border: 3px solid #444;
+        min-width: 15%;
+    }
+}
+
+
+
+
+
+/**main**/
+main {
+    background-color: black;
+}
+
+
+/**Primera sección**/
+.main__header__betta-logo {
+    width: 100%;
+    height: 100%;
+}
+.main__header__p{
+    display: inline;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+
+/**Segunda sección**/
+.bettas__section {
+    display: block;
+}
+.bettas__section__div{
+    display: inline-block;    
+    background-color: rgb(74, 74, 74);
+    margin: 5rem 6rem 0 0;
+    width: 20%;
+    height: 100%;    
+}
+.bettas__section__div__img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+
+
+/**Celular**/
+@media (max-width: 767px) {
+    .main__header__p{
+        font-size: 1rem;
+        top: 15rem;
+        left: 5rem;
+    }
+}
+
+
+/**Tablet**/
+@media (min-width: 768px) and (max-width: 990px) {
+    .main__header__p{
+        font-size: 1rem;
+        top: 15rem;
+        left: 5rem;
+    }
+}
+
+
+/**PC**/
+@media (min-width: 991px) {
+    .main__header__p{
+        font-size: 1rem;
+        top: 15rem;
+        left: 5rem;
+    }
 }
 
 
@@ -92,7 +223,7 @@ main{
 .header__main__section__div{
     background-color: #444;
     width: 40vw;
-    min-width: 600px;
+    min-width: 400px;
     margin-top: 20px;
 }
 .header__main__section__div__img{
@@ -139,13 +270,4 @@ main{
 .footer__nav__a {
     border: 3px solid gray;
     text-decoration: none;
-}
-/**Celular**/
-@media (max-width: 767px) {
-    .header__small-section{
-        display: none;
-    }
-    .Beretta-93R{
-        display: none;
-    }
 }
