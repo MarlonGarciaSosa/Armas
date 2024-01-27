@@ -33,13 +33,11 @@ html {
     padding: 5px;
 }
 .header__section #caballero{
-    background-color: #333;
     display: inline;
     width: 3rem;
     height: 4rem;
 }
 .header__section #sol{
-    background-color: #333;
     display: inline;
     width: 2rem;
     height: 2rem;
@@ -51,13 +49,12 @@ html {
     background-color: rgb(100,100,100);
 }
 .header__nav::-webkit-scrollbar {
-    width: 95%;
     height: 10px;
     border-radius: 5px;
-    background-color: rgb(63, 176, 213);
+    background-color: white;
 }
 .header__nav::-webkit-scrollbar-thumb {
-    background-color:  rgb(78, 78, 248);
+    background-color:  rgb(188, 188, 188);
     border-radius: 5px;
 }
 /**Celular**/
@@ -73,7 +70,7 @@ html {
         display: inline;
         min-width: 120px;
         background-color: rgb(74, 74, 74);
-        color: rgb(78, 78, 248);    
+        color: white; 
         border: 3px solid #444;
         min-width: 20%;
         margin: 0 2%;
@@ -82,7 +79,6 @@ html {
         margin-top: -120.8px;
     }
     html {
-        background-color: #333;
         padding-top: 120.8px;
     }
 
@@ -99,7 +95,7 @@ html {
         display: inline;
         min-width: 120px;
         background-color: rgb(74, 74, 74);
-        color: rgb(78, 78, 248);    
+        color: white;    
         border: 3px solid #444;
         min-width: 15%;
     }
@@ -116,7 +112,7 @@ html {
         display: inline;
         min-width: 120px;
         background-color: rgb(74, 74, 74);
-        color: rgb(78, 78, 248);    
+        color: white;     
         border: 3px solid #444;
         min-width: 15%;
     }
