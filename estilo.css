@@ -182,7 +182,7 @@ main{
 /**footer**/
 .footer *{
     background-color: #48e;
-    color: black;
+    color: white;
 }
 .footer {
     background-color: #48e;
@@ -198,6 +198,5 @@ main{
     display: inline;
 }
 .footer__nav__a {
-    border: 3px solid gray;
-    text-decoration: none;
+    color: white;
 }
